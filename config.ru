@@ -1,7 +1,3 @@
-run proc {
-  [
-    200,
-    { 'Content-Type' => 'text/html' },
-    ['Hello, world!']
-  ]
-}
+require './config/Application'
+
+run BestQuotes::Application.new
